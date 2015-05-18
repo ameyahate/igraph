@@ -31,7 +31,7 @@ This document is concerned with the igraph C library.
 * Please always use the `master` branch. Choose this branch in your
   fork.
 * Then look for the file you want to modify.
-* Clique on the edit symbol (pen) on the upper right corner of the file view.
+* Click on the edit symbol (pen) on the upper right corner of the file view.
 * Make your edits.
 * Write a short commit message, less than 65 characters. E.g.
   "Fix C docs typo" or "Fix degree bug for loops". If needed, elaborate
