@@ -36,6 +36,7 @@
 
 #include "igraph_constants.h"
 #include "igraph_types.h"
+#include "igraph_strvector.h"
 #include "igraph_datatype.h"
 #include "igraph_iterators.h"
 #include "igraph_arpack.h"
@@ -63,6 +64,21 @@ int igraph_betweenness_estimate(const igraph_t *graph, igraph_vector_t *res,
                                 igraph_real_t cutoff, 
 				const igraph_vector_t *weights, 
 				igraph_bool_t nobigint);
+int igraph_group_betweenness(const igraph_t *graph, 
+                             igraph_vector_t *res,
+		                     const igraph_vs_t vids, 
+		                     igraph_bool_t directed,
+		                     const igraph_strvector_t* types, 
+		                     const igraph_vector_t* weights, 
+		                     igraph_bool_t nobigint);
+int igraph_group_betweenness_estimate(const igraph_t *graph, 
+                                      igraph_vector_t *res, 
+				                      const igraph_vs_t vids, 
+				                      igraph_bool_t directed,
+				                      igraph_real_t cutoff,
+				                      const igraph_strvector_t* types,
+				                      const igraph_vector_t *weights, 
+				                      igraph_bool_t nobigint);
 int igraph_edge_betweenness(const igraph_t *graph, igraph_vector_t *result,
                             igraph_bool_t directed, 
 			    const igraph_vector_t *weigths);
